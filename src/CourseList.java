@@ -9,11 +9,39 @@ import java.util.Map;
 public class CourseList {
 
     //holds all courses
+    //did not implement userlist as I did not have persistent users
 
     public int size = 0;
 
     private List<Course> courseList= new ArrayList<Course>();
 
+
+    void getCourse(String input){//print out course information based on the name
+        int count = 0;
+        int sections = 0;
+        boolean found = false;
+
+        //compare search to course names and print info if found
+        while(input.compareTo(this.getCourseList().get(count).getName().toLowerCase())!= 0 && count < this.size -1 ){
+            if(input.compareTo(this.getCourseList().get(count+1).getName().toLowerCase())== 0)
+                found = true;
+            count+=1;
+        }
+        if(found) {
+            System.out.println();
+            this.getCourseList().get(count).getInfo();
+
+            while (input.compareTo(this.getCourseList().get(count).getName().toLowerCase()) == 0) {
+                count += 1;
+                sections += 1;
+            }
+
+            System.out.println("There are " + sections + " section(s) of this class");
+        }
+        else{
+            System.out.println("Class not found!");
+        }
+    }
 
 
     void addCourse(Course course){

@@ -51,40 +51,17 @@ public class UserInterface {
                     run = false;
                     break;
 
-                case("1")://Get course information
+                case("1")://Get course information- Requirement A.10
                     System.out.println("Enter course: ");
                     input= in.nextLine().toLowerCase();
-                    int count = 0;
-                    int sections = 0;
-                    boolean found = false;
+                    cl.getCourse(input);
+                    break;
 
-                    while(input.compareTo(cl.getCourseList().get(count).getName().toLowerCase())!= 0 && count < cl.size -1 ){
-                        if(input.compareTo(cl.getCourseList().get(count+1).getName().toLowerCase())== 0)
-                            found = true;
-                        count+=1;
-                    }
-
-                    if(found) {
-                        System.out.println();
-                        cl.getCourseList().get(count).getInfo();
-
-                        while (input.compareTo(cl.getCourseList().get(count).getName().toLowerCase()) == 0) {
-                            count += 1;
-                            sections += 1;
-                        }
-
-                        System.out.println("There are " + sections + " section(s) of this class");
-                        break;
-                    }
-                    else{
-                        System.out.println("Class not found!");
-                        break;
-                    }
-                case("2"): //get program of study and comittee form
+                case("2"): //get program of study and committee form- Requirement A.11
                     user.checkProgram();
                     break;
 
-                case("3"): //check major progress
+                case("3"): //check major progress- Requirement A.13
                     user.checkProgress();
                     break;
 
