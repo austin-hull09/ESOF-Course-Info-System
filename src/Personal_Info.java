@@ -1,5 +1,7 @@
 public class Personal_Info {
 
+    //holds info about user
+
     private String name;
     private String netID;
     private String ssn;
@@ -8,6 +10,7 @@ public class Personal_Info {
     private String major;
     private String minor;
 
+    //setters and getters
     public String getMinor() {
         return minor;
     }

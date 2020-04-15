@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+//creates user objects, whether professor or student
+
 public class User {
 
     Personal_Info info;
@@ -9,6 +11,7 @@ public class User {
 
     }
 
+    //moved print method to User class from strategy class
     void printInfo() {
         System.out.println("Name: "+ this.info.getName()+ "\n"+
                 "NetID: "+ this.info.getNetID()+ "\n"+
@@ -20,19 +23,19 @@ public class User {
 
     }
 
-    void checkProgram() {
+    void checkProgram() {//calls to either StudentStrategy or ProfessorStrategy to check program
         strategy.checkProgram();
     }
 
-    void checkProgress() {
+    void checkProgress() {//calls to either StudentStrategy or ProfessorStrategy to check progress
         strategy.checkProgress();
     }
 
-    public void setStrategy(){
+    public void setStrategy(){//implemented in User and Professor classes
     }
 
 
-    void enterInfo() {
+    void enterInfo() {//enter Personal_Info
         Scanner in = new Scanner(System.in);
 
         System.out.println("Enter name: ");

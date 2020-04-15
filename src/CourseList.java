@@ -8,15 +8,16 @@ import java.util.Map;
 
 public class CourseList {
 
+    //holds all courses
 
+    public int size = 0;
 
     private List<Course> courseList= new ArrayList<Course>();
 
 
-    public void Courselist(){
-    }
 
     void addCourse(Course course){
+        size+=1;
         courseList.add(course);
     }
 
