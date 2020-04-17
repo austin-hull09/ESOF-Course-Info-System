@@ -1,3 +1,7 @@
+/**Author: Austin Hull
+ * github.com/austin-hull09
+ */
+
 import java.util.List;
 
 public class Course {

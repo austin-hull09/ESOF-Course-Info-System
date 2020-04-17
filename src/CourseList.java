@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+/**Author: Austin Hull
+ * github.com/austin-hull09
+ */
 
 public class CourseList {
 

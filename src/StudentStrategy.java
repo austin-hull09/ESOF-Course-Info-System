@@ -1,3 +1,7 @@
+/**Author: Austin Hull
+ * github.com/austin-hull09
+ */
+
 public class StudentStrategy implements UserStrategy {
 
     //strategy pattern for students

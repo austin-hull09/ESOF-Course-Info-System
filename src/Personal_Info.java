@@ -1,3 +1,7 @@
+/**Author: Austin Hull
+ * github.com/austin-hull09
+ */
+
 public class Personal_Info {
 
     //holds info about user

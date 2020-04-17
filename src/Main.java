@@ -1,4 +1,6 @@
-import java.util.Scanner;
+/**Author: Austin Hull
+ * github.com/austin-hull09
+ */
 
 //Driver class, calls user interface
 
